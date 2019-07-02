@@ -14,6 +14,7 @@ App = {
       //reuse the provider of the Web3 object injected by Metamask
       App.web3Provider = web3.currentProvider;
     } else {
+      alert ("using coinbase");
       //create a new provider and plug it directly into our local node
       App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
     }
